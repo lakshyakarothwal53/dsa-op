@@ -1,3 +1,23 @@
+
+/*
+LeetCode 867 - Transpose Matrix
+
+Problem summary:
+Given a 2D matrix, return its transpose (swap rows and columns).
+The transpose of a matrix is obtained by flipping it over its main diagonal.
+
+Approach used in this implementation:
+- Create a new matrix out of size n x m (where n = original columns, m = original rows).
+- For each element at (i, j) in the input, place it at (j, i) in the output.
+
+Why this works:
+- The element at row i and column j in the original matrix becomes the element at row j and column i in the transposed matrix.
+
+Time & Space complexity:
+- Time: O(m*n), Space: O(m*n), where m = number of rows, n = number of columns.
+*/
+// ...existing code...
+
 class Solution {
 public:
     vector<vector<int>> transpose(vector<vector<int>>& matrix) {
